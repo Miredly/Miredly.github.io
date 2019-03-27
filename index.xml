@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>http://www.example.com/</link>
+    <link>https://miredly.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 25 Feb 2019 22:01:47 -1000</lastBuildDate>
     
-	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://miredly.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>This website took 20 minutes to set up.</title>
-      <link>http://www.example.com/posts/first-post/</link>
+      <link>https://miredly.github.io/posts/first-post/</link>
       <pubDate>Mon, 25 Feb 2019 22:01:47 -1000</pubDate>
       
-      <guid>http://www.example.com/posts/first-post/</guid>
+      <guid>https://miredly.github.io/posts/first-post/</guid>
       <description>What better way to explore posting with Hugo than to post /about/ Hugo? After spending three weeks learning Flask, I decided to take a quick break and try out Hugo, a static web page generator recommended by Vicky Lai.
 What can I say? I think I&amp;rsquo;m sold. This will at least serve as an excellent splash page before I get something more complex up and running with Flask. Maybe the two could even work well together?</description>
     </item>
