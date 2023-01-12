@@ -1,236 +1,164 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="author" content="M Gordon">
-
-  <meta name="keywords" content="blog,developer,multimedia">
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:description" content="" />
-
-
-  <base href="/">
-  <title></title>
-
-  <link rel="canonical" href="/">
-
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
-    integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="/css/coder.min.44b912f76dcc354b1335263013379015009c89b5c2bd9943ebdec444e39ef0b2.css"
-    integrity="sha256-RLkS923MNUsTNSYwEzeQFQCcibXCvZlD697EROOe8LI=" crossorigin="anonymous" media="screen" />
-
-  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="" />
-  <link href="/index.xml" rel="feed" type="application/rss+xml" title="" />
-
-
-  <meta name="generator" content="Hugo 0.54.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- <embed src="/nav.html" class="contained"></embed> -->
+    <div class="navigation">
+        <h5>
+            <ul id="menu">
+                <li><a href="/index.html" target="_parent">About</a></li>
+                <li><a href="/portfolio.html" target="_parent">Portfolio</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </h5>
+    </div>
 </head>
 
-<body class=" ">
-  <main class="wrapper">
-    <nav class="navigation">
-      <section class="container" style="background-color: rgba(0, 0, 0, 0.1);
-  									text-align: right;">
-        <a class="navigation-title" href="/">
-
-        </a>
-        <input type="checkbox" id="menu-toggle" />
-        <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-        <ul class="navigation-list">
-
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="/">About</a>
-          </li>
-
-          <!--          <li class="navigation-item">
-            <a class="navigation-link" href="/posts/">Blog</a>
-          </li> -->
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="/portfolio.html">Portfolio</a>
-          </li>
-
-          <li class="navigation-item">
-            <a class="navigation-link" href="/contact.html">Contact me</a>
-          </li>
-
-
-
-        </ul>
-      </section>
-    </nav>
-
-
-    <div class="content" style="padding-top: 1%;
-                               padding-right: 1%;
-                               padding-bottom: 1%;
-                               padding-left: 1%;">
-      <section style="padding-top: 1%;
-                     padding-right: 1%;
-                     padding-bottom: 1%;
-                     padding-left: 1%;
-                     width: 450px">
-        <!-- #game dev -->
-        <h1>Game Dev</h1>
-        <p>
+<!-- GAMEDEV -->
+<div class="column">
+    <h1 class="centered outline"> Game Dev </h1>
+    <p>
+    <div class="portfolio light">
         <div>
-          <h2><a href="https://miredly.itch.io/">Gloam</a></h2>
-          <IMG SRC="/images/BP_Walkthrough.gif">
-          <p>Spooky-cute procedural city generator, developed in Unity. Climb buildings. Glide around. Enjoy the
-            ambience as the spirits of Gloam go about their day.</p>
+            <h2><a href="">Knight's Tail: Tactics</a></h2>
+            <IMG class="contained" SRC="img/game_screens/KnightsTail.gif">
+            <p>
+                Procedurally generated Tactical RPG. Can you fight your way across the map to get the treasure?
+            </p>
+        </div>
+        <div>
+            <h2><a href="https://miredly.itch.io/">Gloam</a></h2>
+            <IMG class="contained" SRC="img/game_screens/Gloam.gif">
+            <p>Spooky-cute procedural city generator, developed in Unity. Climb buildings. Glide around. Enjoy the
+                ambience as the spirits of Gloam go about their day.</p>
         </div>
 
         <div>
-          <h2><a href="https://toffee.itch.io/sylvie">Sylvie</a></h2>
-          <IMG SRC="/images/Sylvie.png">
-          <p>Fast-paced platformer developed with <a href="https://toffee.itch.io/">Toffee</a> for Magical Girl Jam
-            2020.</p>
+            <h2><a href="https://toffee.itch.io/sylvie">Sylvie</a></h2>
+            <IMG class="contained" SRC="img/game_screens/Sylvie.png">
+            <p>Fast-paced platformer developed with <a href="https://toffee.itch.io/">Toffee</a> for Magical Girl Jam
+                2020.</p>
         </div>
 
         <div>
-          <h2><a href="https://miredly.itch.io/peregrination">Peregrination</a></h2>
-          <IMG SRC="/images/Peregrination.png">
-          <p>A reflective hypercard point-and-click adventure, developed for Hyperjam 2020.</p>
+            <h2><a href="https://miredly.itch.io/peregrination">Peregrination</a></h2>
+            <IMG class="contained" SRC="img/game_screens/Perigrination.png">
+            <p>A reflective hypercard point-and-click adventure, developed for Hyperjam 2020.</p>
         </div>
 
         <div>
-          <h2><a href="https://andyman404.itch.io/catastrophe-clingers">Catastrophe Clingers</a></h2>
-          <IMG SRC="/images/catastropheclingers.gif">
-          <p>2020 entry for Global Game Jam: A sandbox game about holding your crumbling world together with cats.
-            Developed
-            with <a href="https://andyman404.itch.io">Andrew Wang</a> </p>
+            <h2><a href="https://andyman404.itch.io/catastrophe-clingers">Catastrophe Clingers</a></h2>
+            <IMG class="contained" SRC="img/game_screens/CatastrpheClingers.gif">
+            <p>2020 entry for Global Game Jam: A sandbox game about holding your crumbling world together with cats.
+                Developed
+                with <a href="https://andyman404.itch.io">Andrew Wang</a> </p>
         </div>
 
         <div>
-          <h2><a href="https://globalgamejam.org/2019/games/marshmallow-exodus">Marshmallow Exodus</a></h2>
-          <IMG SRC="/images/marsh_ex.png">
-          <p>Lead your Marshmallow flock to safety, but watch out for hungry gummybears! Developed with a small team for
-            Global
-            Game Jam 2019.</p>
+            <h2><a href="https://globalgamejam.org/2019/games/marshmallow-exodus">Marshmallow Exodus</a></h2>
+            <IMG class="contained" SRC="img/game_screens/ MarshmallowExodus.png">
+            <p>Lead your Marshmallow flock to safety, but watch out for hungry gummybears! Developed with a small team
+                for
+                Global
+                Game Jam 2019.</p>
         </div>
 
         <div>
-          <h2><a href="">Arc</a></h2>
-          <IMG SRC="/images/Arc_Walkthrough.gif">
-          <p>A procedurally endless walking simulator, developed as a case study in aesthetic applications of
-            procedurally generated terrain in Unity</p>
+            <h2><a href="">Arc</a></h2>
+            <IMG class="contained" SRC="img/game_screens/Arc.gif">
+            <p>A procedurally endless walking simulator, developed as a case study in aesthetic applications of
+                procedurally generated terrain in Unity</p>
         </div>
 
         <div>
-          <h2><a href="https://www.youtube.com/watch?v=LSNIoByLo8Y">Where We Are</a></h2>
-          <iframe width="400" height="315" src="https://www.youtube.com/embed/LSNIoByLo8Y" frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>A VR Audio Installation Piece. Created as a Masters Thesis Project at Berklee College of Music and
-            displayed at the Museum of Science at the City of Arts and Sciences in Valencia, Spain.</p>
+            <h2><a href="https://www.youtube.com/watch?v=LSNIoByLo8Y">Where We Are</a></h2>
+            <iframe class="contained" src="https://www.youtube.com/embed/LSNIoByLo8Y" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p>A VR Audio Installation Piece. Created as a Masters Thesis Project at Berklee College of Music and
+                displayed at the Museum of Science at the City of Arts and Sciences in Valencia, Spain.</p>
         </div>
 
         <div>
-          <h2><a href="https://misato.itch.io/we-must-play-the-fox">We Must Play The Fox</a></h2>
-          <IMG SRC="/images/fox.png">
-          <p>An 8 bit procedural egg hunting game developed in a week with a small team for Lowrez Jam</p>
+            <h2><a href="https://misato.itch.io/we-must-play-the-fox">We Must Play The Fox</a></h2>
+            <IMG class="contained" SRC="img/game_screens/WeMustPlayTheFox.png">
+            <p>Collect eggs, avoid Chickens! an 8 bit procedural egg hunting game developed in a week with a small team
+                for Lowrez Jam</p>
         </div>
-
-        </p>
-      </section>
-
-      <section style="padding-top: 1%;
-                     padding-right: 1%;
-                     padding-bottom: 1%;
-                     padding-left: 1%;
-                     width: 450px;
-                     background-color: rgba(0, 0, 0, 0.1);">
-        <!-- #music dev -->
-        <h1>Music Production</h1>
-        <p>
-        <div>
-          <h2><a href="https://wingfactory.bandcamp.com/releases">Wing Factory - Call Mountain</a></h2>
-          <iframe style="border: 0; width: 400px; height: 315px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1019808137/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless><a href="http://wingfactory.bandcamp.com/album/call-mountain">Call Mountain by Wing
-              Factory</a></iframe>
-          <p>Procedural Album written and recorded for the 2018 Record Production Month Challenge using Max/MSP and
-            probabilistic follow actions in Ableton Live</p>
-        </div>
-        <div>
-          <h2><a href="https://www.youtube.com/watch?v=oKWEo7JzpII&t">Ghost Logic (epilepsy warning)</a></h2>
-          <iframe width="400" height="315" src="https://www.youtube.com/embed/oKWEo7JzpII" frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>48 minutes of algorithmically generated, non-linear music, with programmatically reactive visuals</p>
-        </div>
-        <div>
-          <h2><a href="https://soundcloud.com/mired">Additional Music</a></h2>
-          <iframe width="400" height="400" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/224862&color=%23ffffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-
-          <h2><a href="https://mired.bandcamp.com">Albums</a></h2>
-
-          <h3><a href="http://mired.bandcamp.com/album/you-can-not-remix">You Can (Not) Remix</a></h3>
-          <p>An album of Evangelion Soundtrack remixes</p>
-          <iframe style="border: 0; width: 400px; height: 315px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=2336080932/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless><a href="http://mired.bandcamp.com/album/you-can-not-remix">You Can (Not) Remix by
-              Mired</a></iframe>
-
-          <h3><a href="http://mired.bandcamp.com/album/sim-city-2000-remixed">Sim City 2000 Remixed</a></h3>
-          <p>A commissioned album of Sim City 2000 remixes</p>
-          <iframe style="border: 0; width: 400px; height: 315px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=635441842/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless><a href="http://mired.bandcamp.com/album/sim-city-2000-remixed">Sim City 2000 Remixed by
-              Mired</a></iframe>
-
-          <h3><a href="http://mired.bandcamp.com/album/reflexivity">Reflexivity</a></h3>
-          <iframe style="border: 0; width: 400px; height: 315px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=1419253587/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless><a href="http://mired.bandcamp.com/album/reflexivity">Reflexivity by Mired</a></iframe>
-
-          <h3><a href="http://mired.bandcamp.com/album/space-spirits">Space Spirits</a></h3>
-          <iframe style="border: 0; width: 400px; height: 315px;"
-            src="https://bandcamp.com/EmbeddedPlayer/album=275394717/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/"
-            seamless><a href="http://mired.bandcamp.com/album/space-spirits">SPACE SPIRITS by Mired</a></iframe>
-
-        </div>
-        </p>
-      </section>
-
-      <section style="padding-top: 1%;
-                     padding-right: 1%;
-                     padding-bottom: 1%;
-                     padding-left: 1%;
-                     width: 450px;">
-        <!-- #phone dev -->
-        <h1>Audio Dev</h1>
-        <p>
-        <div>
-          <h2><a href="https://eclipsesoundscapes.org">Eclipse Soundscapes</a></h2>
-          <iframe width="400" height="315" src="https://www.youtube.com/embed/kvbJrIS8z6U" frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>A Smartphone App to make the Eclipse accessible to people who are blind or
-            visually impaired.</p>
-        </div>
-        </p>
-      </section>
-
     </div>
 
+</div>
 
-  </main>
+<!-- MUSIC PRODUCTION -->
+<div class="column">
+    <h1 class="centered outline"> Music Production </h1>
 
-</body>
+    <div class="portfolio dark">
+        <div>
+            <h2><a href="https://wingfactory.bandcamp.com/releases">Wing Factory - Call Mountain</a></h2>
+            <iframe class="contained"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1019808137/size=large/bgcol=555568/linkcol=b9eedc/tracklist=false/transparent=true/"
+                seamless><a href="http://wingfactory.bandcamp.com/album/call-mountain">Call Mountain by Wing
+                    Factory</a></iframe>
+            <p>Procedural Album written and recorded for the 2018 Record Production Month Challenge using Max/MSP and
+                probabilistic follow actions in Ableton Live</p>
+        </div>
+        <div>
+            <h2><a href="https://www.youtube.com/watch?v=oKWEo7JzpII&t">Ghost Logic (epilepsy warning)</a></h2>
+            <iframe class="contained" src="https://www.youtube.com/embed/oKWEo7JzpII" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>48 minutes of algorithmically generated, non-linear music, with programmatically reactive visuals</p>
+        </div>
+        <div>
+            <h2><a href="https://soundcloud.com/mired">Additional Music</a></h2>
+            <iframe class="contained" scrolling="no" frameborder="no" allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/224862&color=%23555568&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 
-</html>
+            <h2><a href="https://mired.bandcamp.com">Albums</a></h2>
+
+            <h3><a href="http://mired.bandcamp.com/album/you-can-not-remix">You Can (Not) Remix</a></h3>
+            <iframe class="contained"
+                src="https://bandcamp.com/EmbeddedPlayer/album=2336080932/size=large/bgcol=555568/linkcol=b9eedc/tracklist=false/transparent=true/"
+                seamless><a href="http://mired.bandcamp.com/album/you-can-not-remix">You Can (Not) Remix by
+                    Mired</a>
+            </iframe>
+            <p>An album of Evangelion Soundtrack remixes</p>
+
+            <h3><a href="http://mired.bandcamp.com/album/sim-city-2000-remixed">Sim City 2000 Remixed</a></h3>
+            <iframe class="contained"
+                src="https://bandcamp.com/EmbeddedPlayer/album=635441842/size=large/bgcol=555568/linkcol=b9eedc/tracklist=false/transparent=true/"
+                seamless><a href="http://mired.bandcamp.com/album/sim-city-2000-remixed">Sim City 2000 Remixed by
+                    Mired</a>
+            </iframe>
+            <p>A commissioned album of Sim City 2000 remixes</p>
+
+            <h3><a href="http://mired.bandcamp.com/album/reflexivity">Reflexivity</a></h3>
+            <iframe class="contained"
+                src="https://bandcamp.com/EmbeddedPlayer/album=1419253587/size=large/bgcol=555568/linkcol=b9eedc/tracklist=false/transparent=true/"
+                seamless><a href="http://mired.bandcamp.com/album/reflexivity">Reflexivity by Mired</a>
+            </iframe>
+
+            <h3><a href="http://mired.bandcamp.com/album/space-spirits">Space Spirits</a></h3>
+            <iframe class="contained"
+                src="https://bandcamp.com/EmbeddedPlayer/album=275394717/size=large/bgcol=555568/linkcol=b9eedc/tracklist=false/transparent=true/"
+                seamless><a href="http://mired.bandcamp.com/album/space-spirits">SPACE SPIRITS by Mired</a>
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<!-- AUDIO DEV -->
+<div class="column">
+    <h1 class="centered outline"> Audio Dev </h1>
+
+    <div class="portfolio light">
+        <div>
+            <h2><a href="https://eclipsesoundscapes.org">Eclipse Soundscapes</a></h2>
+            <iframe class="contained" src="https://www.youtube.com/embed/kvbJrIS8z6U" frameborder="0"
+                allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>A Smartphone App to make the Eclipse accessible to people who are blind or
+                visually impaired.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Lato;
+    src: url('/font/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url('/font/Merriweather-Regular.ttf');
+}
+
+body {
+    font-family: Lato;
+    font-size: 1.6em;
+    font-weight: 100;
+    line-height: 1.5em;
+    color: #f3eded;
+    background-color: #555568;
+}
+
+.outline {
+    color: #555568;
+    /* can't be transparent, needs to mask shadows */
+    text-shadow: 1px 1px 0 #b9eedc,
+        -1px 1px 0 #b9eedc,
+        1px -1px 0 #b9eedc,
+        -1px -1px 0 #b9eedc;
+}
+
+h1.centered {
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Lato;
+    font-weight: 700;
+    margin: 3rem 0 3rem;
+    margin-top: 2em;
+}
+
+ul#menu li {
+    display: inline;
+    padding: 15px;
+}
+
+a {
+    font-weight: 300;
+    color: #b9eedc;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+    color: #fda9a9
+}
+
+.navigation {
+    text-align: right;
+}
+
+.light {
+    background-color: #8e9191;
+}
+
+.dark {
+    background-color: #555568;
+}
+
+div.portfolio {
+    /* border: 15px solid #8e9191; */
+    height: 100%;
+    padding: 25px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+
+IMG.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+IMG.logo {
+    width: 100%;
+    height: 50%;
+    max-width: 768px;
+}
+
+IMG.contained {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+iframe.contained {
+    width: 100%;
+    height: 400px;
+}
+
+embed.contained {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+p.centered {
+    text-align: center;
+}
+
+.icon {
+    margin: 15px;
+}
