@@ -40,7 +40,7 @@ h6 {
     font-weight: 700;
     margin: 1em 0 1em;
     margin-top: 1em;
-    margin-bottom: 1.5em
+    margin-bottom: 1.3em
 }
 
 a {
@@ -142,7 +142,7 @@ IMG.contained {
 
 iframe.contained {
     width: 100%;
-    height: 300px;
+    height: 460px;
 }
 
 embed.contained {
@@ -166,6 +166,7 @@ p.centered {
 
     .box {
         width: 75%;
+        min-width: 750px;
     }
 
     .navigation {
@@ -175,5 +176,10 @@ p.centered {
     div.portfolio {
         column-gap: 25px;
         row-gap: 25px;
+    }
+
+    iframe.contained {
+        height: 810px;
+        max-width: 700px;
     }
 }
