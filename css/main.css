@@ -10,7 +10,7 @@
 
 body {
     font-family: Lato;
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 100;
     line-height: 1.3em;
     color: #f3eded;
@@ -59,6 +59,7 @@ a:hover {
 ul#menu li {
     display: inline;
     padding: 2em;
+    margin-bottom: 10px;
 }
 
 .navigation {
@@ -69,21 +70,22 @@ ul#menu li {
     font-size: 1.3em;
     flex-wrap: wrap;
     /* padding-right: 15px; */
-    min-width: 600px;
 }
 
-.sub-navigation{
-    justify-content: center;
+.sub-navigation {
+    /* justify-content: center; */
     border-style: dashed;
-    border-color:#8e9191;
+    border-color: #8e9191;
     display: inline-flex;
     font-size: 1.3em;
     flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
     padding-right: 15px;
     min-width: 300px;
 }
 
-.dashed-border{
+.dashed-border {
     border-style: dashed;
 }
 
@@ -114,11 +116,12 @@ div.portfolio {
     width: 33.33%;
 }
 
-.box{
-    width: 350px;
+.box {
+    width: 18px;
+    min-width: 350px;
     padding: 1%;
-    border-style:dashed;
-    border-color:#555568;
+    border-style: dashed;
+    border-color: #555568;
 }
 
 
@@ -154,4 +157,18 @@ p.centered {
 
 .icon {
     margin: 15px;
+}
+
+@media (orientation:portrait) {
+    body {
+        font-size: 150%;
+    }
+
+    .box {
+        width: 75%;
+    }
+
+    .navigation {
+        min-width: 768px;
+    }
 }
