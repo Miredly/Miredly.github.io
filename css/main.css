@@ -103,11 +103,11 @@ div.portfolio {
     height: 100%;
     width: 100%;
     /* padding: 25px; */
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 50px;
+    padding-bottom: 25px;
     display: inline-flex;
     flex-wrap: wrap;
-    column-gap: 1%;
+    column-gap: 10px;
     row-gap: 10px;
 }
 
@@ -117,9 +117,9 @@ div.portfolio {
 }
 
 .box {
-    width: 18px;
+    width: 18%;
     min-width: 350px;
-    padding: 1%;
+    padding: 25px;
     border-style: dashed;
     border-color: #555568;
 }
@@ -161,7 +161,7 @@ p.centered {
 
 @media (orientation:portrait) {
     body {
-        font-size: 150%;
+        font-size: 165%;
     }
 
     .box {
@@ -170,5 +170,10 @@ p.centered {
 
     .navigation {
         min-width: 768px;
+    }
+
+    div.portfolio {
+        column-gap: 25px;
+        row-gap: 25px;
     }
 }
