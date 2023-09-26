@@ -166,7 +166,7 @@ p.centered {
 
     .box {
         width: 75%;
-        min-width: 750px;
+        /* min-width: 750px; */
     }
 
     .navigation {
@@ -178,9 +178,9 @@ p.centered {
         row-gap: 25px;
     }
 
-    iframe.contained {
-        /* aspect-ratio: 16 / 9; */
-        width: 700px;
-        height: 600px;
-    }
+    /* iframe.contained { */
+    /* aspect-ratio: 16 / 9; */
+    /* width: 700px; */
+    /* height: 600px; */
+    /* } */
 }
