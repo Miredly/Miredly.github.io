@@ -91,10 +91,12 @@ ul#menu li {
 
 .light {
     background-color: #8e9191;
+    border-color: #555568;
 }
 
 .dark {
     background-color: #555568;
+    border-color: #8e9191;
 }
 
 div.portfolio {
@@ -109,6 +111,21 @@ div.portfolio {
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
+}
+
+div.blog {
+    justify-content: center;
+    white-space: pre-wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    display: grid
+}
+
+div.post {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .column {
@@ -177,10 +194,4 @@ p.centered {
         column-gap: 25px;
         row-gap: 25px;
     }
-
-    /* iframe.contained { */
-    /* aspect-ratio: 16 / 9; */
-    /* width: 700px; */
-    /* height: 600px; */
-    /* } */
 }
