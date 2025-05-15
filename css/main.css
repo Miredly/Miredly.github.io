@@ -17,6 +17,7 @@ body {
     background-color: #555568;
 }
 
+/* this is for outline style text only I think? */
 .outline {
     color: #555568;
     /* can't be transparent, needs to mask shadows */
@@ -105,12 +106,24 @@ div.portfolio {
     height: 100%;
     width: 100%;
     /* padding: 25px; */
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 25px;
     display: inline-flex;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
+    /* border-style: solid; */
+    /* border-width: 10px; */
+    /* border-color: #fda9a9; */
+}
+
+div.headline {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* border-style: solid; */
 }
 
 div.blog {
