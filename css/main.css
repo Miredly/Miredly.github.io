@@ -1,3 +1,23 @@
+:root {
+    --primary-color: #ffeecc;
+    /* Main brand color */
+    --secondary-color: #33FF57;
+    /* Accent color */
+    --bg-color: #46425e;
+    /* Background color */
+    --card-bg-color: #1f1f1f;
+    /* Card background */
+    --text-color: #ffeecc;
+    /* Primary text color */
+    --purple: #46425e;
+    --dark-green: #15788c;
+    --light-green: #00b9be;
+    --extra-light-green: #b9eedc;
+    --white: #ffeecc;
+    --pink: #ffb0a3;
+    --red: #ff6973;
+}
+
 @font-face {
     font-family: Lato;
     src: url('/font/Lato-Regular.ttf');
@@ -13,18 +33,18 @@ body {
     font-size: 100%;
     font-weight: 100;
     line-height: 1.3em;
-    color: #f3eded;
-    background-color: #555568;
+    color: var(--white);
+    background-color: var(--purple);
 }
 
 /* this is for outline style text only I think? */
 .outline {
-    color: #555568;
+    color: var(--purple);
     /* can't be transparent, needs to mask shadows */
-    text-shadow: 1px 1px 0 #b9eedc,
-        -1px 1px 0 #b9eedc,
-        1px -1px 0 #b9eedc,
-        -1px -1px 0 #b9eedc;
+    text-shadow: 1px 1px 0 var(--light-green),
+        -1px 1px 0 var(--light-green),
+        1px -1px 0 var(--light-green),
+        -1px -1px 0 var(--light-green);
 }
 
 h1.centered {
@@ -46,15 +66,14 @@ h6 {
 
 a {
     font-weight: 300;
-    color: #b9eedc;
+    color: var(--light-green);
     text-decoration: none;
 }
 
 a:focus,
 a:hover {
-    /* text-decoration: underline; */
-    font-weight: 600;
-    color: #fda9a9
+    /* font-weight: 600; */
+    color: var(--pink)
 }
 
 ul#menu li {
@@ -66,7 +85,9 @@ ul#menu li {
 .navigation {
     display: inline-flex;
     border-style: solid;
-    border-color: #8e9191;
+    border-color: var(--red);
+    border-width: 10px;
+    border-radius: 10px;
     font-size: 1.3em;
     flex-wrap: nowrap;
 }
@@ -74,7 +95,7 @@ ul#menu li {
 .sub-navigation {
     /* justify-content: center; */
     border-style: dashed;
-    border-color: #8e9191;
+    border-color: var(--red);
     display: inline-flex;
     font-size: 1.3em;
     flex-wrap: wrap;
@@ -89,13 +110,15 @@ ul#menu li {
 }
 
 .light {
-    background-color: #8e9191;
-    border-color: #555568;
+    background-color: var(--pink);
+    border-color: var(--purple);
+    color: var(--purple)
 }
 
 .dark {
-    background-color: #555568;
-    border-color: #8e9191;
+    background-color: var(--purple);
+    border-color: var(--white);
+    color: var(--white);
 }
 
 div.portfolio {
@@ -103,22 +126,17 @@ div.portfolio {
     justify-content: center;
     height: 100%;
     width: 100%;
-    /* padding: 25px; */
     padding-top: 25px;
     padding-bottom: 25px;
     display: inline-flex;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
-    /* border-style: solid; */
-    /* border-width: 10px; */
-    /* border-color: #fda9a9; */
 }
 
 div.headline {
     justify-content: center;
-    /* height: 100%; */
-    /* width: 100%; */
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: inline-flex;
@@ -126,9 +144,20 @@ div.headline {
     border-style: solid;
     border-bottom-width: 10px;
     border-top-width: 10px;
-    border-right-width: 0px;
+    border-right-width: 10px;
     border-left-width: 0px;
-    border-bottom-color: #555568;
+    background-color: var(--white);
+    border-color: var(--red);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--purple);
+    color: var(--white);
+    text-align: center;
 }
 
 div.blog {
@@ -155,8 +184,22 @@ div.post {
     width: 18%;
     min-width: 350px;
     padding: 25px;
-    border-style: dashed;
-    border-color: #555568;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 10px;
+    border-color: var(--red);
+    background: var(--white);
+    color: var(--purple)
+}
+
+.box.dark {
+    background: var(--purple);
+}
+
+.box.intro-text {
+    border-style: none;
+    background: var(--purple);
+    color: var(--light-green);
 }
 
 
