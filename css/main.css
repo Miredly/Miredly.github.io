@@ -30,18 +30,18 @@ body {
     font-weight: 100;
     line-height: 1.3em;
     color: var(--white);
-    background-color: var(--purple);
+    background-color: var(--white);
     padding-top: 20px;
 }
 
 /* this is for outline style text only I think? */
 .outline {
-    color: var(--purple);
+    color: var(--light-green);
     /* can't be transparent, needs to mask shadows */
-    text-shadow: 1px 1px 0 var(--light-green),
-        -1px 1px 0 var(--light-green),
-        1px -1px 0 var(--light-green),
-        -1px -1px 0 var(--light-green);
+    text-shadow: 1px 1px 0 var(--dark-green),
+        -1px 1px 0 var(--dark-green),
+        1px -1px 0 var(--dark-green),
+        -1px -1px 0 var(--dark-green);
 }
 
 h1.centered {
@@ -196,6 +196,7 @@ div.post {
     padding: 25px;
     border-style: solid;
     border-width: 10px;
+    border-top-width: 40px;
     border-radius: 10px;
     border-color: var(--red);
     background: var(--white);
@@ -204,6 +205,7 @@ div.post {
 
 .box.dark {
     background: var(--purple);
+    color: var(--white)
 }
 
 .box.intro-text {
