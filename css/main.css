@@ -30,6 +30,7 @@ body {
     /* don't delete this there's an automatic margin to the body component */
     margin: 0;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* this is for outline style text only I think? */
