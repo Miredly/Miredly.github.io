@@ -1,13 +1,12 @@
 /* current palette: https: //lospec.com/palette-list/curiosities */
+/* actually it's: https: //lospec.com/palette-list/twilight-5  */
 
 :root {
-    --bar-color: #ff6973;
-    --light: #ffeecc;
-    --dark: #46425e;
-    --link-color: #00b9be;
-    --link-hovered: #ffb0a3;
-    --outline-inner: #15788c;
-    --outline-outer: #00b9be;
+    --light: #fbbbad;
+    --dark: #333f58;
+    --bar-color: #ee8695;
+    --link-color: #4a7a96;
+    --link-hovered: #ee8695;
 }
 
 @font-face {
@@ -34,12 +33,12 @@ body {
 
 /* this is for outline style text only I think? */
 .outline {
-    color: var(--outline-inner);
+    color: var(--link-color);
     /* can't be transparent, needs to mask shadows */
-    text-shadow: 1px 1px 0 var(--outline-outer),
-        -1px 1px 0 var(--outline-outer),
-        1px -1px 0 var(--outline-outer),
-        -1px -1px 0 var(--outline-outer);
+    text-shadow: 1px 1px 0 var(--dark),
+        -1px 1px 0 var(--dark),
+        1px -1px 0 var(--dark),
+        -1px -1px 0 var(--dark);
 }
 
 h1.centered {
