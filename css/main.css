@@ -3,11 +3,11 @@
 /* actually its: https: //lospec.com/palette-list/enchanted-6 */
 
 :root {
-    --light: #e6d3b9;
-    --dark: #7b4255;
-    --bar-color: #ea9971;
-    --link-color: #9d5d7a;
-    --link-hovered: #d67782;
+    --light: #ffeecc;
+    --dark: #46425e;
+    --bar-color: #ff5973;
+    --link-color: #00b9be;
+    --link-hovered: #ffb0a3;
 }
 
 @font-face {
