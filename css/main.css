@@ -1,12 +1,13 @@
 /* current palette: https: //lospec.com/palette-list/curiosities */
-/* actually it's: https: //lospec.com/palette-list/twilight-5  */
+/* actually its: https: //lospec.com/palette-list/twilight-5  */
+/* actually its: https: //lospec.com/palette-list/enchanted-6 */
 
 :root {
-    --light: #fbbbad;
-    --dark: #333f58;
-    --bar-color: #ee8695;
-    --link-color: #4a7a96;
-    --link-hovered: #ee8695;
+    --light: #e6d3b9;
+    --dark: #7b4255;
+    --bar-color: #ea9971;
+    --link-color: #9d5d7a;
+    --link-hovered: #d67782;
 }
 
 @font-face {
