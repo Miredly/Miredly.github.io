@@ -1,13 +1,14 @@
 /* current palette: https: //lospec.com/palette-list/curiosities */
 /* actually its: https: //lospec.com/palette-list/twilight-5  */
 /* actually its: https: //lospec.com/palette-list/enchanted-6 */
+/* actually it's fucking toybox: https: //lospec.com/palette-list/toybox32 */
 
 :root {
-    --light: #ffeecc;
-    --dark: #46425e;
-    --bar-color: #ff5973;
-    --link-color: #00b9be;
-    --link-hovered: #ffb0a3;
+    --light: #e2e4ff;
+    --dark: #24263a;
+    --bar-color: #4f5180;
+    --link-color: #2cb1b1;
+    --link-hovered: #fc7790;
 }
 
 @font-face {
@@ -229,11 +230,17 @@ IMG.logo {
 IMG.contained {
     width: 100%;
     object-fit: contain;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--bar-color)
 }
 
 iframe.contained {
     width: 100%;
     height: 460px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: var(--bar-color)
 }
 
 embed.contained {
