@@ -6,8 +6,13 @@
 :root {
     --light: #e2e4ff;
     --dark: #24263a;
-    --bar-color: #4f5180;
+    --less-dark: #4f5180;
+    --bar-color: #726da3;
+    --panel-color: #4f5180;
+    --panel-background: #4f5180;
+    --panel-border: #e2e4ff;
     --link-color: #2cb1b1;
+    --outline-color: #4edfd0;
     --link-hovered: #fc7790;
 }
 
@@ -27,7 +32,7 @@ body {
     font-weight: 100;
     line-height: 1.3em;
     color: var(--text-color);
-    background-color: var(--light);
+    background-color: var(--dark);
     /* don't delete this there's an automatic margin to the body component */
     margin: 0;
     padding-top: 20px;
@@ -38,10 +43,10 @@ body {
 .outline {
     color: var(--link-color);
     /* can't be transparent, needs to mask shadows */
-    text-shadow: 1px 1px 0 var(--dark),
-        -1px 1px 0 var(--dark),
-        1px -1px 0 var(--dark),
-        -1px -1px 0 var(--dark);
+    text-shadow: 1px 1px 0 var(--outline-color),
+        -1px 1px 0 var(--outline-color),
+        1px -1px 0 var(--outline-color),
+        -1px -1px 0 var(--outline-color);
 }
 
 h1.centered {
@@ -81,6 +86,7 @@ ul#menu li {
 .navigation {
     display: inline-flex;
     border-style: solid;
+    background-color: var(--less-dark);
     border-color: var(--bar-color);
     border-width: 10px;
     border-radius: 10px;
@@ -91,7 +97,8 @@ ul#menu li {
 .sub-navigation {
     /* justify-content: center; */
     border-style: dashed;
-    border-color: var(--bar-color);
+    border-color: var(--light);
+    background-color: var(--less-dark);
     display: inline-flex;
     font-size: 1.3em;
     flex-wrap: wrap;
@@ -132,23 +139,23 @@ div.portfolio {
 
 div.headline {
     justify-content: center;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 74%;
+    margin-left: 13%;
+    margin-right: 13%;
     display: inline-flex;
     flex-wrap: wrap;
     border-style: solid;
     border-bottom-width: 10px;
     border-top-width: 10px;
     border-right-width: 10px;
-    border-left-width: 0px;
-    border-right-width: 0px;
+    border-left-width: 10px;
+    border-right-width: 10px;
     background-color: var(--light);
     border-color: var(--bar-color);
 }
 
 div.head-margin {
-    margin-left: 10px;
+    margin-left: 13%;
 }
 
 .header {
@@ -200,9 +207,9 @@ div.post {
     border-width: 10px;
     border-top-width: 40px;
     border-radius: 10px;
-    border-color: var(--bar-color);
-    background: var(--light);
-    color: var(--dark)
+    border-color: var(--panel-border);
+    background: var(--panel-background);
+    color: var(--light)
 }
 
 .box.dark {
