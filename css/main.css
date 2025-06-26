@@ -287,11 +287,16 @@ p.centered {
 
     .box {
         width: 75%;
-        /* min-width: 750px; */
     }
 
     .navigation {
         min-width: 768px;
+    }
+
+    div.headline {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     div.portfolio {
