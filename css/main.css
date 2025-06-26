@@ -16,6 +16,14 @@
     --link-hovered: #fc7790;
 }
 
+/* html {
+    background: url(/img/Mired_BG.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
 @font-face {
     font-family: Lato;
     src: url('/font/Lato-Regular.ttf');
@@ -37,6 +45,14 @@ body {
     margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.header-img {
+    background: url(/img/Mired_BG.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* this is for outline style text only I think? */
