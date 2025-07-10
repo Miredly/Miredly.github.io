@@ -16,14 +16,6 @@
     --link-hovered: #fc7790;
 }
 
-/* html {
-    background: url(/img/Mired_BG.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */
-
 @font-face {
     font-family: Lato;
     src: url('/font/Lato-Regular.ttf');
@@ -41,8 +33,8 @@ body {
     line-height: 1.3em;
     color: var(--text-color);
     background-color: var(--dark);
-    /* don't delete this there's an automatic margin to the body component */
     margin: 0;
+    /* don't delete this there's an automatic margin to the body component */
     padding-top: 20px;
     padding-bottom: 20px;
 }
