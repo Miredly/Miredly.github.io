@@ -10,10 +10,11 @@
     --bar-color: #726da3;
     --panel-color: #4f5180;
     --panel-background: #4f5180;
-    --panel-border: #e2e4ff;
+    --panel-border: #4f5180;
     --link-color: #2cb1b1;
     --outline-color: #4edfd0;
     --link-hovered: #fc7790;
+    --transparent-dark: #24263aaa;
 }
 
 @font-face {
@@ -37,24 +38,15 @@ body {
     /* don't delete this there's an automatic margin to the body component */
     padding-top: 20px;
     padding-bottom: 20px;
-}
 
-.header-img {
+
     background: url(/img/Mired_BG.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+    background-attachment: fixed;
 
-/* this is for outline style text only I think? */
-.outline {
-    color: var(--link-color);
-    /* can't be transparent, needs to mask shadows */
-    text-shadow: 1px 1px 0 var(--outline-color),
-        -1px 1px 0 var(--outline-color),
-        1px -1px 0 var(--outline-color),
-        -1px -1px 0 var(--outline-color);
 }
 
 h1.centered {
@@ -81,6 +73,7 @@ a {
 }
 
 a:focus,
+
 a:hover {
     color: var(--link-hovered)
 }
@@ -91,22 +84,36 @@ ul#menu li {
     margin-bottom: 10px;
 }
 
+.header-img {
+    background: url(/img/Mired_BG.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* this is for outline style text only I think? */
+.outline {
+    color: var(--link-color);
+    /* can't be transparent, needs to mask shadows */
+    text-shadow: 1px 1px 0 var(--outline-color),
+        -1px 1px 0 var(--outline-color),
+        1px -1px 0 var(--outline-color),
+        -1px -1px 0 var(--outline-color);
+}
+
+
 .navigation {
     display: inline-flex;
     border-style: solid;
-    background-color: var(--less-dark);
-    border-color: var(--bar-color);
-    border-width: 10px;
-    border-radius: 10px;
     font-size: 1.3em;
     flex-wrap: nowrap;
 }
 
 .sub-navigation {
-    /* justify-content: center; */
-    border-style: dashed;
-    border-color: var(--light);
-    background-color: var(--less-dark);
+    justify-content: center;
+    text-align: left;
+    /* background-color: var(--navigation-select); */
     display: inline-flex;
     font-size: 1.3em;
     flex-wrap: wrap;
@@ -114,10 +121,7 @@ ul#menu li {
     column-gap: 10px;
     padding-right: 15px;
     min-width: 300px;
-}
-
-.dashed-border {
-    border-style: dashed;
+    border-style: solid;
 }
 
 .light {
@@ -127,43 +131,9 @@ ul#menu li {
 }
 
 .dark {
-    background-color: var(--dark);
+    /* background-color: var(--dark); */
     border-color: var(--bar-color);
     color: var(--light);
-}
-
-div.portfolio {
-
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-div.headline {
-    justify-content: center;
-    width: 74%;
-    margin-left: 13%;
-    margin-right: 13%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    border-style: solid;
-    border-bottom-width: 10px;
-    border-top-width: 10px;
-    border-right-width: 10px;
-    border-left-width: 10px;
-    border-right-width: 10px;
-    background-color: var(--light);
-    border-color: var(--bar-color);
-}
-
-div.head-margin {
-    margin-left: 13%;
 }
 
 .header {
@@ -187,21 +157,6 @@ div.head-margin {
     text-align: center;
 }
 
-div.blog {
-    justify-content: center;
-    white-space: pre-wrap;
-    row-gap: 10px;
-    column-gap: 10px;
-    display: grid
-}
-
-div.post {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
 .column {
     float: left;
     width: 33.33%;
@@ -216,7 +171,6 @@ div.post {
     border-top-width: 40px;
     border-radius: 10px;
     border-color: var(--panel-border);
-    background: var(--panel-background);
     color: var(--light)
 }
 
@@ -231,6 +185,63 @@ div.post {
     color: var(--link-color);
 }
 
+div.portfolio {
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+div.headline {
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    display: block;
+}
+
+div.section-header {
+    justify-content: center;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    min-height: 100px;
+    width: 768px;
+    background-color: var(--transparent-dark);
+    backdrop-filter: blur(15px);
+    border-style: solid;
+    border-color: #c0b9f5;
+    border-width: 3px;
+    border-radius: 5px;
+    border-top-width: 15px;
+    border-color: var(--);
+    padding-top: 15px;
+}
+
+div.head-margin {
+    margin-left: 13%;
+}
+
+
+div.blog {
+    justify-content: center;
+    white-space: pre-wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    display: grid
+}
+
+div.post {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
 
 IMG.centered {
     display: block;
@@ -272,6 +283,16 @@ p.centered {
     margin: 15px;
 }
 
+#window {
+    border-image: url("/img/Window_Ninepatch.png") stretch;
+    border-image-slice: 110 300 100 100 fill;
+    border-top-width: 20px;
+    border-right-width: 60px;
+    border-left-width: 20px;
+    border-bottom-width: 20px;
+    backdrop-filter: blur(8px);
+}
+
 @media (orientation:portrait) {
     body {
         font-size: 150%;
@@ -284,6 +305,10 @@ p.centered {
     .navigation {
         min-width: 768px;
     }
+
+    /* .sub-navigation {
+        min-width: 768px;
+    } */
 
     div.headline {
         width: 90%;
