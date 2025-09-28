@@ -23,7 +23,7 @@ outfile.write(
       <ul id="menu">
         <li><a href="/index.html">About</a></li>
         <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/p_gamedev.html">Portfolio</a></li>
+        <li><a href="/gamedev.html">Portfolio</a></li>
       </ul>
     </div>
   </div>
